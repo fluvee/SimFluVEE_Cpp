@@ -1,0 +1,129 @@
+2017-04-03_145852
+Input File,Simflu6_input.csv
+Title,Case 10H Leaky
+Number of simulations,100
+Seed,1943
+All-or-none vaccine,0
+Output files requested:
+Inputs and Calculated Parameters,1
+Vaccination,0
+Detailed,0
+Contacts,0
+Prevelance,0
+Incidence-daily-each simulation,0
+Incidence-monthly-each simulation,0
+Incidence-season-each simulation,0
+Incidence-daily-overall,0
+Incidence-monthly-overall,1
+Incidence-season-overall,1
+Outcomes file,0
+Add timestamp to output file names,1
+Starting year,2010
+Starting month,10
+Number of months,3
+Number of strata,2
+Population size per stratum,600,400
+Total population,1000
+Probabilities of X=1,0.8,0.4
+Probabilities of U=1 given X=1,0.7,0.5
+Probabilities of U=1 given X=0,0.6,0.3
+Vaccination incremental coverage matrix for X=1 and U=1
+0,0.5,0.4
+1,0.2,0.1
+2,0.1,0.05
+3,0,0
+Vaccination incremental coverage multiplier for X=0,0.9,0.8
+Vaccination incremental coverage multiplier for U=0,0.7,0.6
+Vaccination incremental coverage matrix for X=0 and U=1
+0,0.45,0.32
+1,0.18,0.08
+2,0.09,0.04
+3,0,0
+Vaccination incremental coverage matrix for X=1 and U=0
+0,0.35,0.24
+1,0.14,0.06
+2,0.07,0.03
+3,0,0
+Vaccination incremental coverage matrix for X=0 and U=0
+0,0.315,0.192
+1,0.126,0.048
+2,0.063,0.024
+3,0,0
+Number of initial infected persons in the population,10
+Number of contacts per day,10,15
+Distribution of contacts
+1,0.7,0.3
+2,0.4,0.6
+Length of latent period (days),2,2
+Length of infectious period (days),4,4
+Probabilities that infected person becomes ill,0.67,0.67
+Relative infectiousness if not ill,0.4,0.4
+Transmission probabilities to unvaccinated for X=1
+1,0.025,0.03
+2,0.025,0.03
+3,0.05,0.1
+Transmission probabilities multiplier for unvaccinated with X=0,1.5,2
+Transmission probabilities for unvaccinated with X=0
+1,0.0375,0.06
+2,0.0375,0.06
+3,0.075,0.2
+Vaccine efficacy for X=1
+1,0.6,0.6
+2,0.6,0.6
+3,0.6,0.6
+Vaccine efficacy multiplier for X=0,0.7,0.7
+Vaccine efficacy for X=0
+1,0.42,0.42
+2,0.42,0.42
+3,0.42,0.42
+Transmission probabilities to vaccinated X=1
+1,0.01,0.012
+2,0.01,0.012
+3,0.02,0.04
+Transmission probabilities to vaccinated X=0
+1,0.02175,0.0348
+2,0.02175,0.0348
+3,0.0435,0.116
+Length of NFARI episode (days),5,8
+Daily probabilities of onset of NFARI for unvaccinated with X=1
+1,0.02,0.03
+2,0.04,0.06
+3,0.05,0.07
+Onset probabilities of NFARI multiplier for vaccinated person,0.7,0.8
+Daily probabilities of onset of NFARI for vaccinated with X=1
+1,0.014,0.024
+2,0.028,0.048
+3,0.035,0.056
+Onset probabilities of NFARI multiplier for X=0,1.5,1.8
+Daily probabilities of onset of NFARI for unvaccinated with X=0
+1,0.03,0.054
+2,0.06,0.108
+3,0.075,0.126
+Daily probabilities of onset of NFARI for vaccinated with X=0
+1,0.021,0.0432
+2,0.042,0.0864
+3,0.0525,0.1008
+Probabilities of visit for a case of FARI for unvaccinated with X=1 and U=1,0.6,0.4
+Multiplier for probabilities of visit for vaccinated FARI case,0.7,0.5
+Multiplier for probabilities of visit for FARI and X=0,1.3,1.6
+Multiplier for probabilities of visit for FARI and U=0,0.8,0.6
+Probabilities of visit for an unvaccinated case of FARI with X=1 and U=1,0.6,0.4
+Probabilities of visit for an unvaccinated case of FARI with X=0 and U=1,0.78,0.64
+Probabilities of visit for an unvaccinated case of FARI with X=1 and U=0,0.48,0.24
+Probabilities of visit for an unvaccinated case of FARI with X=0 and U=0,0.624,0.384
+Probabilities of visit for a vaccinated case of FARI with X=1 and U=1,0.42,0.2
+Probabilities of visit for a vaccinated case of FARI with X=0 and U=1,0.546,0.32
+Probabilities of visit for a vaccinated case of FARI with X=1 and U=0,0.336,0.12
+Probabilities of visit for a vaccinated case of FARI with X=0 and U=0,0.4368,0.192
+Probabilities of visit for a case of NFARI for unvaccinated with X=1 and U=1,0.5,0.3
+Multiplier for probabilities of visit for vaccinated NFARI case,0.7,0.4
+Multiplier for probabilities of visit for NFARI and X=0,1.3,1.6
+Multiplier for probabilities of visit for NFARI and U=0,0.8,0.6
+Probabilities of visit for an unvaccinated case of NFARI with X=1 and U=1,0.5,0.3
+Probabilities of visit for an unvaccinated case of NFARI with X=0 and U=1,0.65,0.48
+Probabilities of visit for an unvaccinated case of NFARI with X=1 and U=0,0.4,0.18
+Probabilities of visit for an unvaccinated case of NFARI with X=0 and U=0,0.52,0.288
+Probabilities of visit for a vaccinated case of NFARI with X=1 and U=1,0.35,0.12
+Probabilities of visit for a vaccinated case of NFARI with X=0 and U=1,0.455,0.192
+Probabilities of visit for a vaccinated case of NFARI with X=1 and U=0,0.28,0.072
+Probabilities of visit for a vaccinated case of NFARI with X=0 and U=0,0.364,0.1152

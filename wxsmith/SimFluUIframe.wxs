@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="SimFluUIFrame">
+		<title>SimFlu V6</title>
+		<size>2192,971</size>
+		<extra_code>this-&gt;Maximize(true);</extra_code>
+		<id_arg>0</id_arg>
+		<object class="wxNotebook" name="ID_NOTEBOOK2" variable="Notebook2" member="yes">
+			<pos>0,128</pos>
+			<size>136,304</size>
+			<fg>wxSYS_COLOUR_SCROLLBAR</fg>
+			<handler function="OnNotebook2PageChanged" entry="EVT_NOTEBOOK_PAGE_CHANGED" />
+			<object class="notebookpage">
+				<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes">
+					<pos>136,144</pos>
+					<size>1920,971</size>
+					<fg>wxSYS_COLOUR_SCROLLBAR</fg>
+					<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText2" member="yes">
+						<label>SimFlu V6</label>
+						<pos>32,72</pos>
+						<size>248,40</size>
+						<fg>wxSYS_COLOUR_WINDOWTEXT</fg>
+						<font>
+							<size>12</size>
+							<style>normal</style>
+							<weight>bold</weight>
+							<underlined>0</underlined>
+							<family>swiss</family>
+						</font>
+					</object>
+					<object class="wxPanel" name="ID_PANEL2" variable="Panel2" member="yes">
+						<pos>32,350</pos>
+						<size>344,432</size>
+						<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+							<label>Output files</label>
+							<pos>8,8</pos>
+							<size>184,40</size>
+							<fg>wxSYS_COLOUR_WINDOWTEXT</fg>
+						</object>
+						<object class="wxCheckBox" name="ID_CHECKBOX2" variable="CheckBox2" member="yes">
+							<label>Input parameters</label>
+							<pos>8,48</pos>
+						</object>
+						<object class="wxCheckBox" name="ID_CHECKBOX3" variable="CheckBox3" member="yes">
+							<label>Vaccination</label>
+							<pos>8,80</pos>
+						</object>
+						<object class="wxCheckBox" name="ID_CHECKBOX4" variable="CheckBox4" member="yes">
+							<label>Detailed</label>
+							<pos>8,112</pos>
+						</object>
+						<object class="wxCheckBox" name="ID_CHECKBOX5" variable="CheckBox5" member="yes">
+							<label>Contacts</label>
+							<pos>8,144</pos>
+						</object>
+						<object class="wxCheckBox" name="ID_CHECKBOX7" variable="CheckBox7" member="yes">
+							<label>Incidence-daily-each sim</label>
+							<pos>8,208</pos>
+						</object>
+						<object class="wxCheckBox" name="ID_CHECKBOX12" variable="CheckBox12" member="yes">
+							<label>Incidence-season-overall</label>
+							<pos>8,368</pos>
+						</object>
+						<object class="wxCheckBox" name="ID_CHECKBOX11" variable="CheckBox11" member="yes">
+							<label>Outcomes</label>
+							<pos>8,400</pos>
+						</object>
+						<object class="wxCheckBox" name="ID_CHECKBOX10" variable="CheckBox10" member="yes">
+							<label>Incidence-monthly-overall</label>
+							<pos>8,336</pos>
+						</object>
+						<object class="wxCheckBox" name="ID_CHECKBOX9" variable="CheckBox9" member="yes">
+							<label>Incidence-daily-overall</label>
+							<pos>8,304</pos>
+						</object>
+						<object class="wxCheckBox" name="ID_CHECKBOX8" variable="CheckBox8" member="yes">
+							<label>Incidence-season-each sim</label>
+							<pos>8,272</pos>
+						</object>
+						<object class="wxCheckBox" name="ID_CHECKBOX6" variable="CheckBox6" member="yes">
+							<label>Incidence-monthly-each sim</label>
+							<pos>8,240</pos>
+						</object>
+						<object class="wxCheckBox" name="ID_CHECKBOX1" variable="CheckBox1" member="yes">
+							<label>Prevalance</label>
+							<pos>8,176</pos>
+						</object>
+					</object>
+					<object class="wxStaticLine" name="ID_STATICLINE2" variable="StaticLine2" member="yes">
+						<pos>392,192</pos>
+						<size>2,576</size>
+					</object>
+					<object class="wxPanel" name="ID_PANEL3" variable="Panel3" member="yes">
+						<pos>32,196</pos>
+						<size>344,136</size>
+						<object class="wxStaticText" name="ID_STATICTEXT5" variable="StaticText5" member="yes">
+							<label>Vaccine type</label>
+							<pos>8,24</pos>
+							<size>184,40</size>
+							<fg>wxSYS_COLOUR_WINDOWTEXT</fg>
+						</object>
+						<object class="wxRadioButton" name="ID_RADIOBUTTON1" variable="RadioButton1" member="yes">
+							<label>All-or-none</label>
+							<pos>8,56</pos>
+						</object>
+						<object class="wxRadioButton" name="ID_RADIOBUTTON2" variable="RadioButton2" member="yes">
+							<label>Leaky</label>
+							<pos>8,88</pos>
+						</object>
+					</object>
+					<object class="wxPanel" name="ID_PANEL4" variable="Panel4" member="yes">
+						<pos>32,120</pos>
+						<size>1584,64</size>
+						<object class="wxStaticText" name="ID_STATICTEXT7" variable="StaticText7" member="yes">
+							<label>Sims</label>
+							<pos>528,16</pos>
+							<size>40,40</size>
+							<fg>wxSYS_COLOUR_WINDOWTEXT</fg>
+							<tooltip>Number of simulations</tooltip>
+						</object>
+						<object class="wxStaticText" name="ID_STATICTEXT6" variable="StaticText6" member="yes">
+							<label>Seed</label>
+							<pos>712,16</pos>
+							<size>48,40</size>
+							<fg>wxSYS_COLOUR_WINDOWTEXT</fg>
+						</object>
+						<object class="wxTextCtrl" name="ID_TEXTCTRL4" variable="TextCtrl4" member="yes">
+							<pos>768,16</pos>
+							<validator>wxTextValidator(wxFILTER__DIGITS,NULL)</validator>
+						</object>
+						<object class="wxStaticText" name="ID_STATICTEXT4" variable="StaticText4" member="yes">
+							<label>Sim Name</label>
+							<pos>8,16</pos>
+							<size>104,40</size>
+							<fg>wxSYS_COLOUR_WINDOWTEXT</fg>
+							<tooltip>Simulation Name</tooltip>
+						</object>
+						<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="TextCtrl1" member="yes">
+							<pos>112,16</pos>
+							<size>224,33</size>
+						</object>
+						<object class="wxStaticText" name="ID_STATICTEXT3" variable="StaticText3" member="yes">
+							<label>Year</label>
+							<pos>352,16</pos>
+							<size>40,40</size>
+							<fg>wxSYS_COLOUR_WINDOWTEXT</fg>
+						</object>
+						<object class="wxTextCtrl" name="ID_TEXTCTRL2" variable="TextCtrl2" member="yes">
+							<pos>400,16</pos>
+							<validator>wxTextValidator(wxFILTER__DIGITS,NULL)</validator>
+						</object>
+						<object class="wxSpinCtrl" name="ID_SPINCTRL1" variable="SpinCtrl1" member="yes">
+							<value>3</value>
+							<min>1</min>
+							<max>12</max>
+							<pos>960,16</pos>
+							<size>87,33</size>
+							<handler function="OnSpinCtrl1Change" entry="EVT_SPINCTRL" />
+						</object>
+						<object class="wxStaticText" name="ID_STATICTEXT9" variable="StaticText9" member="yes">
+							<label>Months</label>
+							<pos>888,16</pos>
+							<size>72,40</size>
+							<fg>wxSYS_COLOUR_WINDOWTEXT</fg>
+							<tooltip>Number of months</tooltip>
+						</object>
+						<object class="wxStaticText" name="ID_STATICTEXT8" variable="StaticText8" member="yes">
+							<label>Strata</label>
+							<pos>1072,16</pos>
+							<size>64,40</size>
+							<fg>wxSYS_COLOUR_WINDOWTEXT</fg>
+							<tooltip>Number of Strata</tooltip>
+						</object>
+						<object class="wxSpinCtrl" name="ID_SPINCTRL3" variable="SpinCtrl3" member="yes">
+							<value>4</value>
+							<min>1</min>
+							<max>6</max>
+							<pos>1136,16</pos>
+							<size>88,33</size>
+							<handler function="OnSpinCtrl3Change" entry="EVT_SPINCTRL" />
+						</object>
+						<object class="wxStaticText" name="ID_STATICTEXT10" variable="StaticText10" member="yes">
+							<label>First month</label>
+							<pos>1248,16</pos>
+							<size>112,40</size>
+							<fg>wxSYS_COLOUR_WINDOWTEXT</fg>
+							<tooltip>First month of the season</tooltip>
+						</object>
+						<object class="wxSpinCtrl" name="ID_SPINCTRL4" variable="SpinCtrl4" member="yes">
+							<value>4</value>
+							<min>1</min>
+							<max>12</max>
+							<pos>1360,16</pos>
+							<size>87,33</size>
+						</object>
+						<object class="wxTextCtrl" name="ID_TEXTCTRL5" variable="TextCtrl5" member="yes">
+							<pos>584,16</pos>
+							<validator>wxTextValidator(wxFILTER__DIGITS,NULL)</validator>
+						</object>
+					</object>
+					<object class="wxPanel" name="ID_PANEL5" variable="Panel5" member="yes">
+						<pos>410,192</pos>
+						<size>894,592</size>
+						<object class="wxNotebook" name="ID_NOTEBOOK1" variable="Notebook1" member="yes">
+							<pos>0,0</pos>
+							<size>880,584</size>
+							<handler function="OnNotebook1PageChanged" entry="EVT_NOTEBOOK_PAGE_CHANGED" />
+							<object class="notebookpage">
+								<object class="wxPanel" name="ID_PANEL6" variable="Panel6" member="yes">
+									<object class="wxGrid" name="ID_GRID1" variable="Grid1" member="yes">
+										<cols>4</cols>
+										<rows>4</rows>
+										<collabels>
+											<item>Strata 1</item>
+											<item>Strata 2</item>
+											<item>Strata 3</item>
+											<item>Strata 4</item>
+										</collabels>
+										<rowlabels>
+											<item>Size</item>
+											<item>Prob(X=1)</item>
+											<item>Prob(Y=1|X=0)</item>
+											<item>Prob(Y=1|X=1)</item>
+										</rowlabels>
+										<pos>8,8</pos>
+										<size>800,500</size>
+										<extra_code>Grid1-&gt;SetRowLabelSize(200);&#x0A;Grid1-&gt;SetLabelBackgroundColour(&quot;white&quot;);&#x0A;Grid1-&gt;SetRowLabelAlignment(wxALIGN__LEFT,wxALIGN__CENTRE);   &#x0A;Grid1-&gt;SetColLabelAlignment(wxALIGN__LEFT,wxALIGN__CENTRE);   &#x0A;//Grid1-&gt;SetDefaultEditor(wxGridCellFloatEditor);</extra_code>
+									</object>
+								</object>
+								<label>Strata</label>
+							</object>
+							<object class="notebookpage">
+								<object class="wxPanel" name="ID_PANEL7" variable="Panel7" member="yes">
+									<object class="wxGrid" name="ID_GRID2" variable="Grid2" member="yes">
+										<cols>4</cols>
+										<rows>6</rows>
+										<collabels>
+											<item>Strata 1</item>
+											<item>Strata 2</item>
+											<item>Strata 3</item>
+											<item>Strata 4</item>
+										</collabels>
+										<rowlabels>
+											<item>Month 0</item>
+											<item>Month 1</item>
+											<item>Month 2</item>
+											<item>Month 3</item>
+											<item>Multiplyer for X=0</item>
+											<item>Multiplyer for Y=0</item>
+										</rowlabels>
+										<pos>8,8</pos>
+										<size>800,500</size>
+										<validator>wxTextValidator(wxFILTER__DIGITS,NULL)</validator>
+										<extra_code>Grid2-&gt;SetRowLabelSize(250);&#x0A;Grid2-&gt;SetLabelBackgroundColour(&quot;white&quot;);&#x0A;Grid2-&gt;SetRowLabelAlignment(wxALIGN__LEFT,wxALIGN__CENTRE);  &#x0A;Grid2-&gt;SetColLabelAlignment(wxALIGN__LEFT,wxALIGN__CENTRE);    </extra_code>
+									</object>
+								</object>
+								<label>Vac Cov</label>
+							</object>
+							<object class="notebookpage">
+								<object class="wxPanel" name="ID_PANEL8" variable="Panel8" member="yes">
+									<object class="wxGrid" name="ID_GRID3" variable="Grid3" member="yes">
+										<cols>4</cols>
+										<rows>5</rows>
+										<collabels>
+											<item>Strata 1</item>
+											<item>Strata 2</item>
+											<item>Strata 3</item>
+											<item>Strata 4</item>
+										</collabels>
+										<rowlabels>
+											<item>Strata 1</item>
+											<item>Strata 2</item>
+											<item>Strata 3</item>
+											<item>Strata 4</item>
+											<item>Number of contact per day</item>
+										</rowlabels>
+										<pos>8,8</pos>
+										<size>800,500</size>
+										<extra_code>Grid3-&gt;SetRowLabelSize(300);&#x0A;Grid3-&gt;SetLabelBackgroundColour(&quot;white&quot;);&#x0A;Grid3-&gt;SetRowLabelAlignment(wxALIGN__LEFT,wxALIGN__CENTRE);   &#x0A;Grid3-&gt;SetColLabelAlignment(wxALIGN__LEFT,wxALIGN__CENTRE);  </extra_code>
+									</object>
+								</object>
+								<label>Contacts</label>
+							</object>
+							<object class="notebookpage">
+								<object class="wxPanel" name="ID_PANEL9" variable="Panel9" member="yes">
+									<object class="wxGrid" name="ID_GRID4" variable="Grid4" member="yes">
+										<cols>4</cols>
+										<rows>5</rows>
+										<collabels>
+											<item>Strata 1</item>
+											<item>Strata 2</item>
+											<item>Strata 3</item>
+											<item>Strata 4</item>
+										</collabels>
+										<rowlabels>
+											<item>Initial number of infected persons</item>
+											<item>Length of latent period</item>
+											<item>Length of infectious period</item>
+											<item>Probability of illness given infection</item>
+											<item>Relative infectiousness if not ill</item>
+										</rowlabels>
+										<pos>8,8</pos>
+										<size>800,500</size>
+										<validator>wxTextValidator(wxFILTER__DIGITS,NULL)</validator>
+										<extra_code>Grid4-&gt;SetRowLabelSize(350);&#x0A;Grid4-&gt;SetLabelBackgroundColour(&quot;white&quot;);&#x0A;Grid4-&gt;SetRowLabelAlignment(wxALIGN__LEFT,wxALIGN__CENTRE); &#x0A;Grid4-&gt;SetColLabelAlignment(wxALIGN__LEFT,wxALIGN__CENTRE);    </extra_code>
+									</object>
+								</object>
+								<label>Flue </label>
+							</object>
+							<object class="notebookpage">
+								<object class="wxPanel" name="ID_PANEL10" variable="Panel10" member="yes">
+									<object class="wxGrid" name="ID_GRID5" variable="Grid5" member="yes">
+										<cols>4</cols>
+										<rows>4</rows>
+										<collabels>
+											<item>Strata 1</item>
+											<item>Strata 2</item>
+											<item>Strata 3</item>
+											<item>Strata 4</item>
+										</collabels>
+										<rowlabels>
+											<item>Month 1</item>
+											<item>Month 2</item>
+											<item>Month 3</item>
+											<item>Multiplyer for X=0</item>
+										</rowlabels>
+										<pos>8,8</pos>
+										<size>800,500</size>
+										<validator>wxTextValidator(wxFILTER__DIGITS,NULL)</validator>
+										<extra_code>Grid5-&gt;SetRowLabelSize(250);&#x0A;Grid5-&gt;SetLabelBackgroundColour(&quot;white&quot;);&#x0A;Grid5-&gt;SetRowLabelAlignment(wxALIGN__LEFT,wxALIGN__CENTRE);   &#x0A;Grid5-&gt;SetColLabelAlignment(wxALIGN__LEFT,wxALIGN__CENTRE); </extra_code>
+									</object>
+								</object>
+								<label>Trans Prob</label>
+							</object>
+							<object class="notebookpage">
+								<object class="wxPanel" name="ID_PANEL11" variable="Panel11" member="yes">
+									<object class="wxGrid" name="ID_GRID6" variable="Grid6" member="yes">
+										<cols>4</cols>
+										<rows>4</rows>
+										<collabels>
+											<item>Strata 1</item>
+											<item>Strata 2</item>
+											<item>Strata 3</item>
+											<item>Strata 4</item>
+										</collabels>
+										<rowlabels>
+											<item>Month 1</item>
+											<item>Month 2</item>
+											<item>Month 3</item>
+											<item>Multiplyer for X=0</item>
+										</rowlabels>
+										<pos>8,8</pos>
+										<size>800,500</size>
+										<validator>wxTextValidator(wxFILTER__DIGITS,NULL)</validator>
+										<extra_code>Grid6-&gt;SetRowLabelSize(250);&#x0A;Grid6-&gt;SetLabelBackgroundColour(&quot;white&quot;);&#x0A;Grid6-&gt;SetRowLabelAlignment(wxALIGN__LEFT,wxALIGN__CENTRE); &#x0A;Grid6-&gt;SetColLabelAlignment(wxALIGN__LEFT,wxALIGN__CENTRE);   </extra_code>
+									</object>
+								</object>
+								<label>Vac Efficacy</label>
+							</object>
+							<object class="notebookpage">
+								<object class="wxPanel" name="ID_PANEL12" variable="Panel12" member="yes">
+									<object class="wxGrid" name="ID_GRID7" variable="Grid7" member="yes">
+										<cols>4</cols>
+										<rows>6</rows>
+										<collabels>
+											<item>Strata 1</item>
+											<item>Strata 2</item>
+											<item>Strata 3</item>
+											<item>Strata 4</item>
+										</collabels>
+										<rowlabels>
+											<item>Length of NFARI episode</item>
+											<item>Daily probabilities of onset of NFARI (month  1)</item>
+											<item>Daily probabilities of onset of NFARI (month  2)</item>
+											<item>Daily probabilities of onset of NFARI (month  3)</item>
+											<item>Daily NFARI probabilities multipliers for \nvaccinated or protected person</item>
+											<item>Daily NFARI probabilities multipliers for X=0</item>
+											<item>Probability of visit for a case of FARI \nunvaccinated or unprotected and Y=1</item>
+											<item>Probability of visit for a case of NFARI \nunvaccinated or unprotected and Y=1</item>
+											<item>Multiplier for probability of visit \nfor vaccinated FARI case</item>
+											<item>Multiplier for probability of visit for \nvaccinated or protected case of NFARI</item>
+											<item>Multiplier for probability of visit for \nY=0 for a case of FARI or NFARI</item>
+										</rowlabels>
+										<pos>8,8</pos>
+										<size>800,564</size>
+										<validator>wxTextValidator(wxFILTER__DIGITS,NULL)</validator>
+										<extra_code>Grid7-&gt;SetRowLabelSize(450);&#x0A;Grid7-&gt;SetLabelBackgroundColour(&quot;white&quot;);&#x0A;Grid7-&gt;SetRowLabelAlignment(wxALIGN__LEFT,wxALIGN__CENTRE);   &#x0A;Grid7-&gt;SetColLabelAlignment(wxALIGN__LEFT,wxALIGN__CENTRE);&#x0A;</extra_code>
+									</object>
+								</object>
+								<label>NFARI</label>
+							</object>
+							<object class="notebookpage">
+								<object class="wxPanel" name="ID_PANEL27" variable="Panel27" member="yes">
+									<object class="wxGrid" name="ID_GRID20" variable="Grid20" member="yes">
+										<cols>4</cols>
+										<rows>5</rows>
+										<collabels>
+											<item>Strata 1</item>
+											<item>Strata 2</item>
+											<item>Strata 3</item>
+											<item>Strata 4</item>
+										</collabels>
+										<rowlabels>
+											<item>Probability of visit for a case of FARI \nunvaccinated or unprotected and Y=1</item>
+											<item>Probability of visit for a case of NFARI \nunvaccinated or unprotected and Y=1</item>
+											<item>Multiplier for probability of visit \nfor vaccinated FARI case</item>
+											<item>Multiplier for probability of visit for \nvaccinated or protected case of NFARI</item>
+											<item>Multiplier for probability of visit for \nY=0 for a case of FARI or NFARI</item>
+										</rowlabels>
+										<pos>8,8</pos>
+										<size>800,564</size>
+										<validator>wxTextValidator(wxFILTER__DIGITS,NULL)</validator>
+										<extra_code>Grid20-&gt;SetRowLabelSize(450);&#x0A;Grid20-&gt;SetLabelBackgroundColour(&quot;white&quot;);&#x0A;Grid20-&gt;SetRowLabelAlignment(wxALIGN__LEFT,wxALIGN__CENTRE);   &#x0A;Grid20-&gt;SetColLabelAlignment(wxALIGN__LEFT,wxALIGN__CENTRE);</extra_code>
+									</object>
+								</object>
+								<label>Visit</label>
+							</object>
+							<object class="notebookpage">
+								<object class="wxPanel" name="ID_PANEL13" variable="Panel13" member="yes">
+									<object class="wxTextCtrl" name="ID_TEXTCTRL3" variable="TextCtrl3" member="yes">
+										<pos>0,0</pos>
+										<size>840,520</size>
+										<style>wxTE_MULTILINE|wxTE_READONLY|wxNO_BORDER</style>
+									</object>
+								</object>
+								<label>Console</label>
+							</object>
+						</object>
+					</object>
+					<object class="wxButton" name="ID_BUTTON1" variable="Button1" member="yes">
+						<label>LOAD</label>
+						<pos>1368,256</pos>
+						<size>116,40</size>
+						<handler function="OnButton1Click" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxButton" name="ID_BUTTON2" variable="Button2" member="yes">
+						<label>SAVE</label>
+						<pos>1368,556</pos>
+						<size>116,40</size>
+						<handler function="OnButton2Click" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxButton" name="ID_BUTTON3" variable="Button3" member="yes">
+						<label>RUN</label>
+						<pos>1368,356</pos>
+						<size>116,40</size>
+						<handler function="OnButton3Click" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxButton" name="ID_BUTTON4" variable="Button4" member="yes">
+						<label>VIEW</label>
+						<pos>1368,456</pos>
+						<size>116,40</size>
+						<handler function="OnButton4Click" entry="EVT_BUTTON" />
+					</object>
+					<object class="wxButton" name="ID_BUTTON5" variable="Button5" member="yes">
+						<label>Cancel</label>
+						<pos>1568,360</pos>
+						<handler function="OnButton5Click1" entry="EVT_BUTTON" />
+					</object>
+				</object>
+				<label>Simulation</label>
+			</object>
+			<object class="notebookpage">
+				<object class="wxPanel" name="ID_PANEL14" variable="Panel14" member="yes">
+					<fg>wxSYS_COLOUR_SCROLLBAR</fg>
+					<object class="wxNotebook" name="ID_NOTEBOOK3" variable="Notebook3" member="yes">
+						<pos>0,0</pos>
+						<size>2184,936</size>
+						<fg>wxSYS_COLOUR_SCROLLBAR</fg>
+						<handler function="OnNotebook3PageChanged" entry="EVT_NOTEBOOK_PAGE_CHANGED" />
+						<object class="notebookpage">
+							<object class="wxPanel" name="ID_PANEL15" variable="Panel15" member="yes">
+								<fg>wxSYS_COLOUR_SCROLLBAR</fg>
+								<object class="wxGrid" name="ID_GRID8" variable="Grid8" member="yes">
+									<cols>2</cols>
+									<rows>1</rows>
+									<readonly>1</readonly>
+									<defaultcolsize>300</defaultcolsize>
+									<pos>0,0</pos>
+									<size>2176,896</size>
+									<extra_code>Grid8-&gt;HideColLabels ();</extra_code>
+								</object>
+							</object>
+							<label>Input Parameters</label>
+						</object>
+						<object class="notebookpage">
+							<object class="wxPanel" name="ID_PANEL16" variable="Panel16" member="yes">
+								<fg>wxSYS_COLOUR_SCROLLBAR</fg>
+								<object class="wxGrid" name="ID_GRID9" variable="Grid9" member="yes">
+									<cols>9</cols>
+									<rows>1</rows>
+									<readonly>1</readonly>
+									<collabels>
+										<item>S</item>
+										<item>M</item>
+										<item>Month</item>
+										<item>Year</item>
+										<item>K</item>
+										<item>X</item>
+										<item>Y</item>
+										<item>Number of Newly Vaccinated</item>
+										<item>Newly Vaccinated</item>
+									</collabels>
+									<pos>0,0</pos>
+									<size>2176,896</size>
+									<style>wxVSCROLL</style>
+								</object>
+							</object>
+							<label>Vaccination</label>
+						</object>
+						<object class="notebookpage">
+							<object class="wxPanel" name="ID_PANEL17" variable="Panel17" member="yes">
+								<fg>wxSYS_COLOUR_SCROLLBAR</fg>
+								<object class="wxGrid" name="ID_GRID10" variable="Grid10" member="yes">
+									<cols>16</cols>
+									<rows>1</rows>
+									<readonly>1</readonly>
+									<collabels>
+										<item>S</item>
+										<item>D</item>
+										<item>Day</item>
+										<item>Month</item>
+										<item>Year</item>
+										<item>I</item>
+										<item>Stratum</item>
+										<item>X</item>
+										<item>Y</item>
+										<item>InitInf</item>
+										<item>Vac</item>
+										<item>Protected</item>
+										<item>State</item>
+										<item>DayInf</item>
+										<item>DNFARI</item>
+										<item>Visit</item>
+									</collabels>
+									<pos>0,0</pos>
+									<size>2176,896</size>
+									<style>wxVSCROLL</style>
+								</object>
+							</object>
+							<label>Detailed</label>
+						</object>
+						<object class="notebookpage">
+							<object class="wxPanel" name="ID_PANEL18" variable="Panel18" member="yes">
+								<fg>wxSYS_COLOUR_SCROLLBAR</fg>
+								<object class="wxGrid" name="ID_GRID11" variable="Grid11" member="yes">
+									<cols>11</cols>
+									<rows>1</rows>
+									<readonly>1</readonly>
+									<collabels>
+										<item>S</item>
+										<item>D</item>
+										<item>I</item>
+										<item>Stratum</item>
+										<item>X</item>
+										<item>Y</item>
+										<item>Vac</item>
+										<item>Protected</item>
+										<item>P(INF)</item>
+										<item>RANDOM</item>
+										<item>NewInf</item>
+									</collabels>
+									<pos>0,0</pos>
+									<size>2176,896</size>
+									<style>wxVSCROLL</style>
+								</object>
+							</object>
+							<label>Contacts</label>
+						</object>
+						<object class="notebookpage">
+							<object class="wxPanel" name="ID_PANEL19" variable="Panel19" member="yes">
+								<object class="wxGrid" name="ID_GRID12" variable="Grid12" member="yes">
+									<cols>12</cols>
+									<rows>1</rows>
+									<readonly>1</readonly>
+									<collabels>
+										<item>S</item>
+										<item>D</item>
+										<item>Day</item>
+										<item>Month</item>
+										<item>Year</item>
+										<item>Stratum</item>
+										<item>Prevalence(S2)</item>
+										<item>Prevalence(S3)</item>
+										<item>P(INF|V=0;X=0)</item>
+										<item>P(INF|V=0;X=1)</item>
+										<item>P(INF|V=1;X=0)</item>
+										<item>P(INF|V=1;X=1)</item>
+									</collabels>
+									<pos>0,0</pos>
+									<size>2176,896</size>
+									<style>wxVSCROLL</style>
+								</object>
+							</object>
+							<label>Prevalance</label>
+						</object>
+						<object class="notebookpage">
+							<object class="wxPanel" name="ID_PANEL20" variable="Panel20" member="yes">
+								<object class="wxGrid" name="ID_GRID13" variable="Grid13" member="yes">
+									<cols>16</cols>
+									<rows>1</rows>
+									<readonly>1</readonly>
+									<collabels>
+										<item>S</item>
+										<item>D</item>
+										<item>Day</item>
+										<item>Month</item>
+										<item>Year</item>
+										<item>Stratum</item>
+										<item>V</item>
+										<item>N</item>
+										<item>Inc2</item>
+										<item>Rate2</item>
+										<item>Inc3</item>
+										<item>Rate3</item>
+										<item>IncT</item>
+										<item>RateT</item>
+										<item>IncNFARI</item>
+										<item>RateNFARI</item>
+									</collabels>
+									<pos>0,0</pos>
+									<size>2176,896</size>
+									<style>wxVSCROLL</style>
+								</object>
+							</object>
+							<label>Incidence-daily-each sim</label>
+						</object>
+						<object class="notebookpage">
+							<object class="wxPanel" name="ID_PANEL21" variable="Panel21" member="yes">
+								<object class="wxGrid" name="ID_GRID14" variable="Grid14" member="yes">
+									<cols>14</cols>
+									<rows>1</rows>
+									<readonly>1</readonly>
+									<collabels>
+										<item>S</item>
+										<item>Month</item>
+										<item>Year</item>
+										<item>Stratum</item>
+										<item>V</item>
+										<item>N</item>
+										<item>Inc2</item>
+										<item>Rate2</item>
+										<item>Inc3</item>
+										<item>Rate3</item>
+										<item>IncT</item>
+										<item>RateT</item>
+										<item>IncNFARI</item>
+										<item>RateNFARI</item>
+									</collabels>
+									<pos>0,0</pos>
+									<size>2176,896</size>
+									<style>wxVSCROLL</style>
+								</object>
+							</object>
+							<label>Incidence-monthly-each sim</label>
+						</object>
+						<object class="notebookpage">
+							<object class="wxPanel" name="ID_PANEL22" variable="Panel22" member="yes">
+								<object class="wxGrid" name="ID_GRID15" variable="Grid15" member="yes">
+									<cols>12</cols>
+									<rows>1</rows>
+									<readonly>1</readonly>
+									<collabels>
+										<item>S</item>
+										<item>Stratum</item>
+										<item>V</item>
+										<item>N</item>
+										<item>Inc2</item>
+										<item>Rate2</item>
+										<item>Inc3</item>
+										<item>Rate3</item>
+										<item>IncT</item>
+										<item>RateT</item>
+										<item>IncNFARI</item>
+										<item>RateNFARI</item>
+									</collabels>
+									<pos>0,0</pos>
+									<size>2176,896</size>
+									<style>wxVSCROLL</style>
+								</object>
+							</object>
+							<label>Incidence-season-each sim</label>
+						</object>
+						<object class="notebookpage">
+							<object class="wxPanel" name="ID_PANEL23" variable="Panel23" member="yes">
+								<object class="wxGrid" name="ID_GRID16" variable="Grid16" member="yes">
+									<cols>15</cols>
+									<rows>1</rows>
+									<readonly>1</readonly>
+									<collabels>
+										<item>D</item>
+										<item>Day</item>
+										<item>Month</item>
+										<item>Year</item>
+										<item>Stratum</item>
+										<item>V</item>
+										<item>N</item>
+										<item>Inc2</item>
+										<item>Rate2</item>
+										<item>Inc3</item>
+										<item>Rate3</item>
+										<item>IncT</item>
+										<item>RateT</item>
+										<item>IncNFARI</item>
+										<item>RateNFARI</item>
+									</collabels>
+									<pos>0,0</pos>
+									<size>2176,896</size>
+									<style>wxVSCROLL</style>
+								</object>
+							</object>
+							<label>Incidence-daily-overall</label>
+						</object>
+						<object class="notebookpage">
+							<object class="wxPanel" name="ID_PANEL24" variable="Panel24" member="yes">
+								<object class="wxGrid" name="ID_GRID17" variable="Grid17" member="yes">
+									<cols>13</cols>
+									<rows>1</rows>
+									<readonly>1</readonly>
+									<collabels>
+										<item>Month</item>
+										<item>Year</item>
+										<item>Stratum</item>
+										<item>V</item>
+										<item>N</item>
+										<item>Inc2</item>
+										<item>Rate2</item>
+										<item>Inc3</item>
+										<item>Rate3</item>
+										<item>IncT</item>
+										<item>RateT</item>
+										<item>IncNFARI</item>
+										<item>RateNFARI</item>
+									</collabels>
+									<pos>0,0</pos>
+									<size>2176,896</size>
+									<style>wxVSCROLL</style>
+								</object>
+							</object>
+							<label>Incidence-monthly-overall</label>
+						</object>
+						<object class="notebookpage">
+							<object class="wxPanel" name="ID_PANEL25" variable="Panel25" member="yes">
+								<object class="wxGrid" name="ID_GRID18" variable="Grid18" member="yes">
+									<cols>11</cols>
+									<rows>1</rows>
+									<readonly>1</readonly>
+									<collabels>
+										<item>Stratum</item>
+										<item>V</item>
+										<item>N</item>
+										<item>Inc2</item>
+										<item>Rate2</item>
+										<item>Inc3</item>
+										<item>Rate3</item>
+										<item>IncT</item>
+										<item>RateT</item>
+										<item>IncNFARI</item>
+										<item>RateNFARI</item>
+									</collabels>
+									<pos>0,0</pos>
+									<size>2176,896</size>
+									<style>wxVSCROLL</style>
+								</object>
+							</object>
+							<label>Incidence-season-overall</label>
+						</object>
+						<object class="notebookpage">
+							<object class="wxPanel" name="ID_PANEL26" variable="Panel26" member="yes">
+								<object class="wxGrid" name="ID_GRID19" variable="Grid19" member="yes">
+									<cols>13</cols>
+									<rows>1</rows>
+									<readonly>1</readonly>
+									<collabels>
+										<item>Sim</item>
+										<item>Person</item>
+										<item>STR</item>
+										<item>X</item>
+										<item>Y</item>
+										<item>INITINF</item>
+										<item>DEFVAC</item>
+										<item>Protected</item>
+										<item>EventCounter</item>
+										<item>Type</item>
+										<item>OnsetDay</item>
+										<item>VacStatus</item>
+										<item>Visit</item>
+									</collabels>
+									<pos>0,0</pos>
+									<size>2176,896</size>
+									<style>wxVSCROLL</style>
+								</object>
+							</object>
+							<label>Outcomes-File</label>
+						</object>
+					</object>
+				</object>
+				<label>Output</label>
+			</object>
+		</object>
+		<object class="wxStatusBar" name="ID_STATUSBAR1" variable="StatusBar1" member="yes">
+			<fields>1</fields>
+			<widths>-1</widths>
+			<styles>wxSB_NORMAL</styles>
+		</object>
+		<object class="wxToolBar" name="ID_TOOLBAR1" variable="ToolBar1" member="yes">
+			<bitmapsize>32,16</bitmapsize>
+			<style>wxTB_HORIZONTAL|wxRAISED_BORDER</style>
+			<object class="tool" name="ID_TOOLBARITEM1" variable="ToolBarItem1" member="yes">
+				<label>Save</label>
+				<bitmap stock_id="wxART_FILE_SAVE" stock_client="wxART_TOOLBAR" />
+				<bitmap2 stock_id="wxART_FILE_SAVE" stock_client="wxART_TOOLBAR" />
+			</object>
+			<object class="tool" name="ID_TOOLBARITEM2" variable="ToolBarItem2" member="yes">
+				<label>Open</label>
+				<bitmap stock_id="wxART_FILE_OPEN" stock_client="wxART_BUTTON" />
+				<bitmap2 stock_id="wxART_FILE_OPEN" stock_client="wxART_TOOLBAR" />
+			</object>
+			<object class="tool" name="ID_TOOLBARITEM3" variable="ToolBarItem3" member="yes">
+				<label>Print</label>
+				<bitmap stock_id="wxART_PRINT" />
+				<bitmap2 stock_id="wxART_PRINT" />
+			</object>
+		</object>
+		<object class="wxMessageDialog" name="ID_MESSAGEDIALOG1" variable="MessageDialog1" member="yes">
+			<caption>Error</caption>
+			<message></message>
+		</object>
+		<object class="wxMenuBar" variable="MenuBar1" member="yes">
+			<object class="wxMenu" variable="Menu1" member="yes">
+				<label>&amp;File</label>
+				<object class="wxMenuItem" name="idMenuQuit" variable="MenuItem1" member="yes">
+					<label>Quit</label>
+					<accel>Alt-F4</accel>
+					<help>Quit the application</help>
+					<handler function="OnQuit" entry="EVT_MENU" />
+				</object>
+			</object>
+			<object class="wxMenu" variable="Menu2" member="yes">
+				<label>Help</label>
+				<object class="wxMenuItem" name="idMenuAbout" variable="MenuItem2" member="yes">
+					<label>About</label>
+					<accel>F1</accel>
+					<help>Show info about this application</help>
+					<handler function="OnAbout" entry="EVT_MENU" />
+				</object>
+			</object>
+		</object>
+	</object>
+</wxsmith>

@@ -1,0 +1,25 @@
+# Makefile for SimFlu* 
+
+CC = g++
+CFLAGS = -O3 -O2 -std=c++11 -static -static-libgcc -static-libstdc++
+#CFLAGS = -g -std=c++11 -static -static-libgcc -static-libstdc++
+#CFLAGS = -g -std=c++11
+#CFLAGS = -O3 -O2 -std=c++11
+SRCDIR = src
+OBJDIR = obj
+#INCDIR = include
+#VPATH = $(SRCDIR) $(INCDIR)
+
+_OBJ = simulator.o population.o params.o flusim.o randgen.o
+OBJ = $(patsubst %,$(OBJDIR)/%,$(_OBJ))
+
+all: FluSim
+	
+FluSim: $(OBJ)
+	$(CC) $(OBJ) $(CFLAGS) -o simflu_test
+	
+$(OBJDIR)/%.o: $(SRCDIR)/%.cpp
+	$(CC) -c $(CFLAGS) -o $@ $<
+
+clean : 
+	rm $(OBJ)
