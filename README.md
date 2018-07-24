@@ -1,4 +1,4 @@
-# SimFLuVEE_Cpp
+# SimFLuVE_Cpp
 
 SimFluVE is a stochastic agent-based simulation program, written in C++, for the transmission of influenza in a stratified population. 
 SimFluVE performs a set of simulations with fixed values of the input parameters.  Each simulation corresponds to a single outbreak.
@@ -27,3 +27,7 @@ The program can also be executed (with default input parameters file) by simply 
 SimFluVE’s graphical user interface lets users provide inputs, run simulations and save outputs in a friendly manner. Following screenshots will walk you through the process of using this interface for running simulations.
  
 The following screenshot shows the default view of SimFluVE. The panel is split between two tabs. The simulation tab contains all the inputs and controls. Once the simulation run is complete, the Output tab populates the desired outputs. 
+
+## User Manual
+
+More information about SimFluVE can be found in the [User Manual Document](https://github.com/fluvee/SimFluVEE_Cpp/blob/master/docs/SimFluVE%20USER%20MANUAL.pdf)
