@@ -24,9 +24,7 @@ The program can also be executed (with default input parameters file) by simply 
 
 ### Using graphical interface
 
-SimFluVE’s graphical user interface lets users provide inputs, run simulations and save outputs in a friendly manner. Following screenshots will walk you through the process of using this interface for running simulations.
- 
-The following screenshot shows the default view of SimFluVE. The panel is split between two tabs. The simulation tab contains all the inputs and controls. Once the simulation run is complete, the Output tab populates the desired outputs. 
+SimFluVE’s graphical user interface lets users provide inputs, run simulations and save outputs in a friendly manner. Refer to the [user manual](#User Manual) to learn more about the inputs and controls to SimFluVE_Cpp UI.
 
 ## User Manual
 
