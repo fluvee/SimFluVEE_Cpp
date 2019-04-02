@@ -24,7 +24,7 @@ The program can also be executed (with default input parameters file) by simply 
 
 ### Using graphical interface
 
-SimFluVE’s graphical user interface lets users provide inputs, run simulations and save outputs in a friendly manner. Refer to the [user manual](#User Manual) to learn more about the inputs and controls to SimFluVE_Cpp UI.
+SimFluVE’s graphical user interface lets users provide inputs, run simulations and save outputs in a friendly manner. Refer to the user manual to learn more about the inputs and controls to SimFluVE_Cpp UI.
 
 ## User Manual
 
